@@ -20,7 +20,8 @@ export default function Navbar() {
         opacity,
         y,
         backgroundColor: useTransform(bgOpacity, (v) => `rgba(5, 5, 5, ${v})`),
-        pointerEvents: useTransform(opacity, (v) => (v < 0.1 ? "none" : "auto")) as unknown as string,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        pointerEvents: useTransform(opacity, (v) => (v < 0.1 ? "none" : "auto")) as any,
       }}
     >
       <div className="text-sm tracking-[0.3em] uppercase font-light">
