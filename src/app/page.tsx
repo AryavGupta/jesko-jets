@@ -22,8 +22,8 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroScroll images={seq1.images} />
-        <Features />
         <PlaneMorph images={seq2.images} />
+        <Features />
         <GlobeSection />
       </main>
       <Footer />
